@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --purple500: #281154 ;
+    --purple300: #270082;
+    --purple600:#1b0058;
+    --red600: #dc0000;
+    --body:#f9f6ff;
+   --maxwidth: 1200px;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: var(--purple500);
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.5) ;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 20px 0px;
+}
+nav ul{
+    display: flex;
+    gap: 20px
+    ;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+.Hero_section{
+    background-image: url(hero_image.png);
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+.Hero_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.Hero_section .container h1{
+    font-size: 96px;
+
+}
+.Hero_section .container h3{
+    font-size: 32px;
+
+}
+.music_section{
+    padding-top: 50px;
+    background: var(--purple500);
+}
+
+.music_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.iphone{
+position: relative;
+top: 400px;
+margin-top: -400px;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+}
+.primary-btn{
+    background-color: #dc0000;
+    color: white;
+}
+.secondary-btn{
+    background-color: var(--purple300);
+    color: white;
+}
+.music-conatiner{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+.music-conatiner h3{
+    padding: 0px 70px;
+}
+.video_section{
+    background-image: url(/video.png);
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+
+}
+.Hero_section,.video_section{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gift-section{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+}
+.giftcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+    ;
+}
+.footer_upper{
+    /* display: flex; */
+   background-color: var(--purple600);
+   padding: 20px;
+   color: white;
+}
+.one{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-links h4{
+    padding-bottom: 10px
+    ;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+
+}
+.footer-lower{
+    background-color: var(--purple300);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.gift-section{
+    scroll-margin: 120px ;
+}
+nav .menu-btn i{
+    font-size: 20px;
+    display: none;
+}
+#click{
+    display: none;
+}
+@media (max-width:412px) {
+   nav ul{
+    position: fixed;
+    top: 80px;
+left: 0;
+height: 100vh;
+width: 100%;
+display: block;
+text-align: center;
+align-items: center;
+align-content: center;
+left: -100%;
+   }
+   nav ul li{
+    margin: 40px 0;
+
+   }
+   nav ul li a{
+    font-size: 20px;
+    display: block;
+
+   }
+   nav .menu-btn i{
+    font-size: 20px;
+    display: block;
+}
+#click:checked ~ ul{
+    left: 0%;
+    
+}
+header{
+    padding: 20px;
+}
+.Hero_section .container h1{
+    font-size: 96px;
+margin-top: 50px;
+}
+.music_section h4{
+    padding: 0 10px;
+}
+.iphone img{
+    width: 300px;
+    height: 300px;
+}
+.music-conatiner h1{
+    text-align: center;
+    align-items: center;
+align-content: center;
+left: -20px;
+}
+.Hero_section .container h1{
+   
+    font-size: 66px;
+}
+.Hero_section .container h3{
+    text-align: center;
+    font-size: 22px;
+    padding: 5px;
+}
+.Hero_section .container p{
+    justify-content: center;
+    padding: 5px;
+}
+.music-conatiner h1{
+   font-size: 25px;
+   padding: 5px;
+   width: 350px;
+}
+.music-conatiner{
+   
+   justify-content: center;
+}
+.music-conatiner h3{
+    font-size: 25px;
+    padding: 5px;
+    justify-content: center;
+    width: 350px;
+}
+.music-conatiner .mac-img img{
+    width: 300px;
+    height: 300px;
+}
+.gift-section {
+    display: flex;
+    flex-direction: column;
+}
+.gift-section .gift-card img{
+    width: 300px;
+    height: 300px;
+    padding-left: 50px;
+}
+.gift-section .giftcontent{
+    width: 350px;
+    align-items: center;
+    align-content: center;
+}
+.gift-section .giftcontent p{
+   padding: 50px;
+   font-size: 20px;
+}
+}
